@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="protoss_circle_color">#0AAAFF</color>
+    <color name="protoss_text_color">#000000</color>
+
+    <color name="terran_circle_color">#0000FF</color>
+    <color name="terran_text_color">#FFFFFF</color>
+
+    <color name="zerg_circle_color">#b329b3</color>
+    <color name="zerg_text_color">#FFFFFF</color>
+</resources>
