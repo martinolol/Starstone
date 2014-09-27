@@ -2,12 +2,6 @@
 <pre-dex-items>
 
     <item
-        dex="/Users/famille/Downloads/Starstone/app/build/intermediates/pre-dexed/debug/internal_impl-20.0.0-0bf291b44a72640d9ea59631c6c98c6462767ae0.jar"
-        jar="/Users/famille/Downloads/Starstone/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/libs/internal_impl-20.0.0.jar"
-        jumboMode="false"
-        revision="20.0.0"
-        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d"/>
-    <item
         dex="/Users/famille/Downloads/Starstone/app/build/intermediates/pre-dexed/debug/support-annotations-20.0.0-bca9cd8c8082330ef7549e0398af852faae531fd.jar"
         jar="/Applications/Android Studio.app/sdk/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar"
         jumboMode="false"
@@ -19,5 +13,23 @@
         jumboMode="false"
         revision="20.0.0"
         sha1="8694693636ab36910c8100ce527c258ff3ebece0"/>
+    <item
+        dex="/Users/famille/AndroidstudioProjects/Starstone/app/build/intermediates/pre-dexed/debug/classes-c02c9e759549b18d3573147d56291dc5b028c29e.jar"
+        jar="/Users/famille/AndroidstudioProjects/Starstone/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0"/>
+    <item
+        dex="/Users/famille/Downloads/Starstone/app/build/intermediates/pre-dexed/debug/internal_impl-20.0.0-0bf291b44a72640d9ea59631c6c98c6462767ae0.jar"
+        jar="/Users/famille/Downloads/Starstone/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/libs/internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d"/>
+    <item
+        dex="/Users/famille/AndroidstudioProjects/Starstone/app/build/intermediates/pre-dexed/debug/internal_impl-20.0.0-02601645a9fc7f72c9e717a9df09ea2eca138328.jar"
+        jar="/Users/famille/AndroidstudioProjects/Starstone/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/libs/internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d"/>
 
 </pre-dex-items>

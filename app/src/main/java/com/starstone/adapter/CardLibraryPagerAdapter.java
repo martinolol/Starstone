@@ -10,7 +10,9 @@ import android.view.ViewGroup;
 
 import com.starstone.R;
 import com.starstone.Utils.SSContext;
+import com.starstone.cards.protoss.Sentry;
 import com.starstone.cards.protoss.Stalker;
+import com.starstone.cards.protoss.Voidray;
 import com.starstone.cards.protoss.Zealot;
 import com.starstone.cards.terran.Ghost;
 import com.starstone.cards.terran.Marauder;
@@ -65,7 +67,8 @@ public class CardLibraryPagerAdapter extends PagerAdapter {
 
             card1.setCard(new Zealot());
             card2.setCard(new Stalker());
-            //card3.setCard(new Zealot());
+            /* setCard(new Sentry(); */
+            card3.setCard(new Voidray());
 
         }else if(hero == Hero.TERRAN){
             card1.setCard(new Marine());
