@@ -12,7 +12,7 @@ public class ZergCard extends Card {
     public ZergCard(){
         super();
         setHero(Hero.ZERG);
-        circleColor = SSContext.getInstance().getContext().getResources().getColor(R.color.zerg_circle_color);
-        textColor = SSContext.getInstance().getContext().getResources().getColor(R.color.zerg_text_color);
+        circleColor = SSContext.getContext().getResources().getColor(R.color.zerg_circle_color);
+        textColor = SSContext.getContext().getResources().getColor(R.color.zerg_text_color);
     }
 }

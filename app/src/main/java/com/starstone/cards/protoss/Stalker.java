@@ -23,7 +23,7 @@ public class Stalker extends ProtossCard {
         life = DEFAULT_LIFE;
         damage = DEFAULT_DAMAGE;
 
-        portrait = BitmapFactory.decodeResource(SSContext.getInstance().getContext().getResources(), R.drawable.protoss_stalker_portrait);
+        portrait = BitmapFactory.decodeResource(SSContext.getContext().getResources(), R.drawable.protoss_stalker_portrait);
 
         setEffects(DEFAULT_EFFECT);
 

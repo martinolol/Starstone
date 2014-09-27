@@ -12,7 +12,7 @@ public class TerranCard extends Card {
     public TerranCard(){
         super();
         setHero(Hero.TERRAN);
-        circleColor = SSContext.getInstance().getContext().getResources().getColor(R.color.terran_circle_color);
-        textColor = SSContext.getInstance().getContext().getResources().getColor(R.color.terran_text_color);
+        circleColor = SSContext.getContext().getResources().getColor(R.color.terran_circle_color);
+        textColor = SSContext.getContext().getResources().getColor(R.color.terran_text_color);
     }
 }

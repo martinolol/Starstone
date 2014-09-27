@@ -8,7 +8,7 @@ import com.starstone.Utils.SSContext;
 public class Zerg extends Hero {
 
     public Zerg(){
-        cardBackground = BitmapFactory.decodeResource(SSContext.getInstance().getContext().getResources(), R.drawable.zerg_card_background);
+        cardBackground = BitmapFactory.decodeResource(SSContext.getContext().getResources(), R.drawable.zerg_card_background);
     }
 
 }

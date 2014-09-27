@@ -3,6 +3,7 @@ package com.starstone.adapter;
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.text.Layout;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +11,7 @@ import android.view.ViewGroup;
 
 import com.starstone.R;
 import com.starstone.Utils.SSContext;
+import com.starstone.cards.Card;
 import com.starstone.cards.protoss.Sentry;
 import com.starstone.cards.protoss.Stalker;
 import com.starstone.cards.protoss.Voidray;
@@ -25,18 +27,39 @@ import com.starstone.widget.CardView;
 
 public class CardLibraryPagerAdapter extends PagerAdapter {
 
+    private LayoutInflater inflater;
+
     private byte hero;
 
-    private LayoutInflater inflater = null;
+    private Card[] protossCards;
+    private Card[] terranCards;
+    private Card[] zergCards;
 
     public CardLibraryPagerAdapter() {
-        inflater = (LayoutInflater) SSContext.getInstance().getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        inflater = (LayoutInflater)SSContext.getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
+        protossCards = new Card[]{new Zealot(), new Stalker(), new Sentry(), new Voidray()};
+        terranCards = new Card[]{new Marine(), new Marauder(), new Ghost()};
+        zergCards = new Card[]{new Zergling(), new Roach(), new Baneling()};
     }
 
     @Override
     public int getCount() {
-        return 1;
+        if(hero == Hero.PROTOSS) {
+
+            return protossCards.length / 3;
+
+        }else if(hero == Hero.TERRAN){
+
+            return terranCards.length / 3;
+
+        }else if(hero == Hero.ZERG){
+
+            return zergCards.length / 3;
+
+        }else{
+            return 0;
+        }
     }
 
     @Override
@@ -50,14 +73,14 @@ public class CardLibraryPagerAdapter extends PagerAdapter {
     }
 
     @Override
-    public void destroyItem(View container, int position, Object object) {
-        ((ViewPager) container).removeView((View) object);
+    public void destroyItem(ViewGroup container, int position, Object object) {
+        container.removeView((View)object);
     }
 
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
 
-        View v = inflater.inflate(R.layout.item_pager_card_library, null);
+        View v = inflater.inflate(R.layout.item_pager_card_library, container, false);
 
         CardView card1 = (CardView)v.findViewById(R.id.card1);
         CardView card2 = (CardView)v.findViewById(R.id.card2);
@@ -65,24 +88,25 @@ public class CardLibraryPagerAdapter extends PagerAdapter {
 
         if(hero == Hero.PROTOSS) {
 
-            card1.setCard(new Zealot());
-            card2.setCard(new Stalker());
-            /* setCard(new Sentry(); */
-            card3.setCard(new Voidray());
+            card1.setCard(protossCards[position + position * 3]);
+            card2.setCard(protossCards[position + 1 + position * 3]);
+            card3.setCard(protossCards[position + 2 + position * 3]);
 
         }else if(hero == Hero.TERRAN){
-            card1.setCard(new Marine());
-            card2.setCard(new Marauder());
-            card3.setCard(new Ghost());
+
+            card1.setCard(terranCards[position + position * 3]);
+            card2.setCard(terranCards[position + 1 + position * 3]);
+            card3.setCard(terranCards[position + 2 + position * 3]);
 
         }else if(hero == Hero.ZERG){
-            card1.setCard(new Zergling());
-            card2.setCard(new Roach());
-            card3.setCard(new Baneling());
+
+            card1.setCard(zergCards[position + position * 3]);
+            card2.setCard(zergCards[position + 1 + position * 3]);
+            card3.setCard(zergCards[position + 2 + position * 3]);
 
         }
 
-        container.addView(v, 0);
+        container.addView(v);
 
         return v;
     }

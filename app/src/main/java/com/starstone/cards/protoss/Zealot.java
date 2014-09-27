@@ -21,7 +21,7 @@ public class Zealot extends ProtossCard {
         life = DEFAULT_LIFE;
         damage = DEFAULT_DAMAGE;
 
-        portrait = BitmapFactory.decodeResource(SSContext.getInstance().getContext().getResources(), R.drawable.protoss_zealot_portrait);
+        portrait = BitmapFactory.decodeResource(SSContext.getContext().getResources(), R.drawable.protoss_zealot_portrait);
 
         setEffects(DEFAULT_EFFECT);
 

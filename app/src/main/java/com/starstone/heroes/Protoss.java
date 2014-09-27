@@ -9,6 +9,6 @@ import com.starstone.Utils.SSContext;
 public class Protoss extends Hero {
 
     public Protoss(){
-        cardBackground = BitmapFactory.decodeResource(SSContext.getInstance().getContext().getResources(), R.drawable.protoss_card_background);
+        cardBackground = BitmapFactory.decodeResource(SSContext.getContext().getResources(), R.drawable.protoss_card_background);
     }
 }

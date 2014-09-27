@@ -11,9 +11,11 @@ import android.widget.Button;
 import com.starstone.Utils.SSContext;
 import com.starstone.adapter.CardLibraryPagerAdapter;
 import com.starstone.heroes.Hero;
+import com.starstone.widget.MultipleItemViewPager;
 
 public class MainActivity extends Activity {
 
+    MultipleItemViewPager pagerContainer;
     ViewPager pager;
 
     CardLibraryPagerAdapter pagerAdapter;
@@ -28,7 +30,8 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         SSContext.createInstance(this);
 
-        pager = (ViewPager)findViewById(R.id.pager);
+        pagerContainer = (MultipleItemViewPager)findViewById(R.id.pagerContainer);
+        pager = pagerContainer.getViewPager();
 
         protossButton = (Button)findViewById(R.id.protoss);
         terranButton = (Button)findViewById(R.id.terran);
@@ -39,6 +42,10 @@ public class MainActivity extends Activity {
         pagerAdapter.setHero(Hero.PROTOSS);
 
         pager.setAdapter(pagerAdapter);
+
+        pager.setOffscreenPageLimit(pagerAdapter.getCount());
+        pager.setPageMargin(15);
+        pager.setClipChildren(false);
 
         protossButton.setOnClickListener(clickProtoss);
         terranButton.setOnClickListener(clickTerran);

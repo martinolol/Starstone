@@ -20,7 +20,7 @@ public class Baneling extends ZergCard {
         life = DEFAULT_LIFE;
         damage = DEFAULT_DAMAGE;
 
-        portrait = BitmapFactory.decodeResource(SSContext.getInstance().getContext().getResources(), R.drawable.zerg_portrait_baneling);
+        portrait = BitmapFactory.decodeResource(SSContext.getContext().getResources(), R.drawable.zerg_portrait_baneling);
 
         setEffects(DEFAULT_EFFECT);
 

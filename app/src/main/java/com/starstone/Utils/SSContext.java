@@ -13,15 +13,11 @@ public class SSContext {
         instance.setContext(context);
     }
 
-    public static SSContext getInstance(){
-        return instance;
-    }
-
     private void setContext(Context context){
         this.context = context;
     }
 
-    public Context getContext(){
-        return context;
+    public static Context getContext(){
+        return instance.context;
     }
 }

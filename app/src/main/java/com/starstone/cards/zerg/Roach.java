@@ -20,7 +20,7 @@ public class Roach extends ZergCard {
         life = DEFAULT_LIFE;
         damage = DEFAULT_DAMAGE;
 
-        portrait = BitmapFactory.decodeResource(SSContext.getInstance().getContext().getResources(), R.drawable.zerg_portrait_roach);
+        portrait = BitmapFactory.decodeResource(SSContext.getContext().getResources(), R.drawable.zerg_portrait_roach);
 
         setEffects(DEFAULT_EFFECT);
 

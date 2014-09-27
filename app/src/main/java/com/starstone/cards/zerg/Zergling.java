@@ -23,7 +23,7 @@ public class Zergling extends ZergCard {
         life = DEFAULT_LIFE;
         damage = DEFAULT_DAMAGE;
 
-        portrait = BitmapFactory.decodeResource(SSContext.getInstance().getContext().getResources(), R.drawable.zerg_portrait_zergling);
+        portrait = BitmapFactory.decodeResource(SSContext.getContext().getResources(), R.drawable.zerg_portrait_zergling);
 
         setEffects(DEFAULT_EFFECT);
 

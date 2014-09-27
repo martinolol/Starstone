@@ -23,7 +23,7 @@ public class Marauder extends TerranCard {
         life = DEFAULT_LIFE;
         damage = DEFAULT_DAMAGE;
 
-        portrait = BitmapFactory.decodeResource(SSContext.getInstance().getContext().getResources(), R.drawable.terran_portrait_marauder);
+        portrait = BitmapFactory.decodeResource(SSContext.getContext().getResources(), R.drawable.terran_portrait_marauder);
 
         setEffects(DEFAULT_EFFECT);
 

@@ -48,11 +48,15 @@
 
     </LinearLayout>
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/pager"
+    <com.starstone.widget.MultipleItemViewPager
+        android:id="@+id/pagerContainer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="8dp"
-        android:layout_below="@id/categories"/>
+        android:layout_below="@id/categories">
+        <android.support.v4.view.ViewPager
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+    </com.starstone.widget.MultipleItemViewPager>
 
 </RelativeLayout>
