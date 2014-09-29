@@ -37,13 +37,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f3b6b41-ce75-40e3-b2b2-88ee37aea1d2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/starstone/widget/HorizontalListView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/values/attrs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/starstone/widget/MultipleItemViewPager.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/starstone/adapter/CardLibraryPagerAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/starstone/adapter/CardLibraryListAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/model_data.bin" afterPath="$PROJECT_DIR$/build/intermediates/model_data.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/starstone/adapter/CardLibraryListAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/starstone/adapter/CardLibraryListAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/starstone/widget/CardView.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/starstone/widget/CardView.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/starstone/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/starstone/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_pager_card_library.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_pager_card_library.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gradle.iws" />
@@ -67,160 +65,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/starstone/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8261618" vertical-offset="0" max-vertical-offset="720">
-              <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
-              <folding>
-                <element signature="e#1384#1531#0" expanded="true" />
-                <element signature="e#1524#1525#0" expanded="true" />
-                <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HorizontalListView.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/starstone/widget/HorizontalListView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.3076925" vertical-offset="3020" max-vertical-offset="19365">
-              <caret line="214" column="74" selection-start-line="214" selection-start-column="26" selection-end-line="214" selection-end-column="74" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2694#2707#0" expanded="true" />
-                <element signature="method#HorizontalListView#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#bindGestureDetector#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="e#6874#7153#0" expanded="true" />
-                <element signature="e#7142#7143#0" expanded="true" />
-                <element signature="method#requestParentListViewToNotInterceptTouchEvents#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#retrieveXmlConfiguration#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#onSaveInstanceState#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#onRestoreInstanceState#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#setDivider#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#setDividerWidth#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#initView#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#reset#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#onChanged#0;class#12079:12888" expanded="true" />
-                <element signature="method#onInvalidated#0;class#12079:12888" expanded="true" />
-                <element signature="e#12948#12949#0" expanded="true" />
-                <element signature="e#13005#13006#0" expanded="true" />
-                <element signature="e#13056#13057#0" expanded="true" />
-                <element signature="e#13119#13120#0" expanded="true" />
-                <element signature="method#setAdapter#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="e#13698#13699#0" expanded="true" />
-                <element signature="e#13729#13730#0" expanded="true" />
-                <element signature="method#initializeRecycledViewCache#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#getRecycledView#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#recycleView#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#isItemViewTypeValid#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#addAndMeasureChild#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#measureChild#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#getLayoutParams#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#onLayout#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#getLeftFadingEdgeStrength#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#getRightFadingEdgeStrength#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#determineFlingAbsorbVelocity#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="e#22275#22382#0" expanded="true" />
-                <element signature="e#22375#22376#0" expanded="true" />
-                <element signature="method#onMeasure#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#determineMaxX#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#fillList#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#removeNonVisibleChildren#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#fillListRight#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#fillListLeft#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#positionChildren#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="e#29061#29062#0" expanded="true" />
-                <element signature="e#29097#29098#0" expanded="true" />
-                <element signature="e#29204#29205#0" expanded="true" />
-                <element signature="e#29258#29259#0" expanded="true" />
-                <element signature="method#getChild#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#getChildIndex#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="e#30545#30546#0" expanded="true" />
-                <element signature="e#30600#30601#0" expanded="true" />
-                <element signature="e#30716#30717#0" expanded="true" />
-                <element signature="e#30789#30790#0" expanded="true" />
-                <element signature="e#30903#30904#0" expanded="true" />
-                <element signature="e#30975#30976#0" expanded="true" />
-                <element signature="method#scrollTo#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="e#31293#31294#0" expanded="true" />
-                <element signature="e#31337#31338#0" expanded="true" />
-                <element signature="e#31394#31395#0" expanded="true" />
-                <element signature="e#31439#31440#0" expanded="true" />
-                <element signature="method#drawEdgeGlow#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#drawDividers#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#drawDivider#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#onDraw#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#dispatchDraw#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#dispatchSetPressed#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#onFling#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#onDown#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#unpressTouchedChild#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="e#37353#37354#0" expanded="true" />
-                <element signature="e#37417#37418#0" expanded="true" />
-                <element signature="method#onFling#0;class#GestureListener#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#onScroll#0;class#GestureListener#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#onSingleTapConfirmed#0;class#GestureListener#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#onLongPress#0;class#GestureListener#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#onTouchEvent#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#releaseEdgeGlow#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#setRunningOutOfDataListener#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#determineIfLowOnData#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="e#43799#43800#0" expanded="true" />
-                <element signature="e#43842#43843#0" expanded="true" />
-                <element signature="method#setCurrentScrollState#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#updateOverscrollAnimation#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#isEdgeGlowEnabled#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="initializer##0;class#HoneycombPlus#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#setFriction#0;class#HoneycombPlus#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="initializer##0;class#IceCreamSandwichPlus#0;class#HorizontalListView#0" expanded="true" />
-                <element signature="method#getCurrVelocity#0;class#IceCreamSandwichPlus#0;class#HorizontalListView#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="attrs.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/attrs.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-              <caret line="8" column="34" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_main.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.2222223" vertical-offset="0" max-vertical-offset="975">
-              <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CardLibraryListAdapter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/starstone/adapter/CardLibraryListAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="927" max-vertical-offset="1575">
-              <caret line="95" column="31" selection-start-line="95" selection-start-column="31" selection-end-line="95" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="item_pager_card_library.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="item_pager_card_library.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_pager_card_library.xml">
           <provider editor-type-id="android-designer">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="495">
-              <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.24368231" vertical-offset="0" max-vertical-offset="554">
+              <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -854,15 +706,17 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/starstone/heroes/Protoss.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/starstone/heroes/Terran.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/starstone/heroes/Zerg.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_pager_card_library.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/starstone/widget/MultipleItemViewPager.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/starstone/widget/ViewPagerContainer.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/starstone/adapter/CardLibraryPagerAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/starstone/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/starstone/adapter/CardLibraryListAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/starstone/widget/HorizontalListView.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/attrs.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_pager_card_library.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/starstone/adapter/CardLibraryListAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/starstone/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/starstone/widget/CardView.java" />
       </list>
     </option>
   </component>
@@ -1556,7 +1410,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942432" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32942432" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1573,7 +1427,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24973376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296146" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1605,14 +1459,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/starstone/adapter/CardLibraryListAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1425" max-vertical-offset="1875">
-          <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_pager_card_library.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -1629,8 +1475,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="690" max-vertical-offset="1500">
           <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
           <folding>
-            <element signature="e#1384#1531#0" expanded="true" />
-            <element signature="e#1524#1525#0" expanded="true" />
+            <element signature="e#1464#1611#0" expanded="true" />
+            <element signature="e#1604#1605#0" expanded="true" />
             <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="true" />
           </folding>
         </state>
@@ -1651,7 +1497,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1425" max-vertical-offset="1875">
           <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#CardLibraryListAdapter#0;class#CardLibraryListAdapter#0" expanded="true" />
+            <element signature="method#getCount#0;class#CardLibraryListAdapter#0" expanded="true" />
+            <element signature="e#2276#2277#0" expanded="true" />
+            <element signature="e#2303#2304#0" expanded="true" />
+            <element signature="e#2360#2361#0" expanded="true" />
+            <element signature="e#2384#2385#0" expanded="true" />
+            <element signature="method#setHero#0;class#CardLibraryListAdapter#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1671,8 +1525,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="690" max-vertical-offset="1500">
           <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
           <folding>
-            <element signature="e#1384#1531#0" expanded="true" />
-            <element signature="e#1524#1525#0" expanded="true" />
+            <element signature="e#1464#1611#0" expanded="true" />
+            <element signature="e#1604#1605#0" expanded="true" />
             <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="true" />
           </folding>
         </state>
@@ -1693,7 +1547,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1425" max-vertical-offset="1875">
           <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#CardLibraryListAdapter#0;class#CardLibraryListAdapter#0" expanded="true" />
+            <element signature="method#getCount#0;class#CardLibraryListAdapter#0" expanded="true" />
+            <element signature="e#2276#2277#0" expanded="true" />
+            <element signature="e#2303#2304#0" expanded="true" />
+            <element signature="e#2360#2361#0" expanded="true" />
+            <element signature="e#2384#2385#0" expanded="true" />
+            <element signature="method#setHero#0;class#CardLibraryListAdapter#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1713,8 +1575,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="690" max-vertical-offset="1500">
           <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
           <folding>
-            <element signature="e#1384#1531#0" expanded="true" />
-            <element signature="e#1524#1525#0" expanded="true" />
+            <element signature="e#1464#1611#0" expanded="true" />
+            <element signature="e#1604#1605#0" expanded="true" />
             <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="true" />
           </folding>
         </state>
@@ -1735,7 +1597,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1425" max-vertical-offset="1875">
           <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#CardLibraryListAdapter#0;class#CardLibraryListAdapter#0" expanded="true" />
+            <element signature="method#getCount#0;class#CardLibraryListAdapter#0" expanded="true" />
+            <element signature="e#2276#2277#0" expanded="true" />
+            <element signature="e#2303#2304#0" expanded="true" />
+            <element signature="e#2360#2361#0" expanded="true" />
+            <element signature="e#2384#2385#0" expanded="true" />
+            <element signature="method#setHero#0;class#CardLibraryListAdapter#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1761,7 +1631,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="1515">
           <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#CardLibraryListAdapter#0;class#CardLibraryListAdapter#0" expanded="true" />
+            <element signature="method#getCount#0;class#CardLibraryListAdapter#0" expanded="true" />
+            <element signature="e#2276#2277#0" expanded="true" />
+            <element signature="e#2303#2304#0" expanded="true" />
+            <element signature="e#2360#2361#0" expanded="true" />
+            <element signature="e#2384#2385#0" expanded="true" />
+            <element signature="method#setHero#0;class#CardLibraryListAdapter#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1912,25 +1790,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/starstone/widget/CardView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7093207" vertical-offset="1" max-vertical-offset="660">
-          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_pager_card_library.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="495">
-          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/sdk/sources/android-20/java/lang/Math.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.230769" vertical-offset="4103" max-vertical-offset="13575">
@@ -1960,14 +1819,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/starstone/adapter/CardLibraryListAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="927" max-vertical-offset="1575">
-          <caret line="95" column="31" selection-start-line="95" selection-start-column="31" selection-end-line="95" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/sdk/sources/android-20/android/widget/Adapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334" vertical-offset="29" max-vertical-offset="2115">
@@ -1985,7 +1836,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/starstone/widget/HorizontalListView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.3076925" vertical-offset="3020" max-vertical-offset="19365">
+        <state vertical-scroll-proportion="0.34234235" vertical-offset="3020" max-vertical-offset="19365">
           <caret line="214" column="74" selection-start-line="214" selection-start-column="26" selection-end-line="214" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -2080,34 +1931,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/dimens.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.2222223" vertical-offset="0" max-vertical-offset="975">
-          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.025817556" vertical-offset="0" max-vertical-offset="581">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/attrs.xml">
+    <entry file="file://$APPLICATION_HOME_DIR$/sdk/sources/android-20/android/widget/GridView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.3321859" vertical-offset="4742" max-vertical-offset="10500">
+          <caret line="1041" column="0" selection-start-line="1041" selection-start-column="0" selection-end-line="1041" selection-end-column="0" />
+          <folding>
+            <element signature="method#setAdapter#0;class#GridView#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/starstone/widget/CardView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6901893" vertical-offset="124" max-vertical-offset="765">
+          <caret line="60" column="36" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/starstone/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8261618" vertical-offset="0" max-vertical-offset="720">
-          <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.6712565" vertical-offset="30" max-vertical-offset="1020">
+          <caret line="41" column="42" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
           <folding>
-            <element signature="e#1384#1531#0" expanded="true" />
-            <element signature="e#1524#1525#0" expanded="true" />
+            <element signature="e#1464#1611#0" expanded="true" />
+            <element signature="e#1604#1605#0" expanded="true" />
             <element signature="method#onCreateOptionsMenu#0;class#MainActivity#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6209386" vertical-offset="586" max-vertical-offset="1140">
+          <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/starstone/adapter/CardLibraryListAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4870912" vertical-offset="572" max-vertical-offset="1260">
+          <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding>
+            <element signature="method#CardLibraryListAdapter#0;class#CardLibraryListAdapter#0" expanded="true" />
+            <element signature="method#getCount#0;class#CardLibraryListAdapter#0" expanded="true" />
+            <element signature="e#2276#2277#0" expanded="true" />
+            <element signature="e#2303#2304#0" expanded="true" />
+            <element signature="e#2360#2361#0" expanded="true" />
+            <element signature="e#2384#2385#0" expanded="true" />
+            <element signature="method#setHero#0;class#CardLibraryListAdapter#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/attrs.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18072289" vertical-offset="0" max-vertical-offset="581">
+          <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_pager_card_library.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24368231" vertical-offset="0" max-vertical-offset="554">
+          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>

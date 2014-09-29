@@ -48,15 +48,22 @@ public class CardView extends View {
 
     }
 
-    /* Pour obtenir un ratio de cinq huitième */
+    /* Pour obtenir un ratio de cinq huitième (5/8) */
     @Override
     public void onMeasure(int widthMeasureSpec, int heightMeasureSpec){
 
         int height = MeasureSpec.getSize(heightMeasureSpec);
+        int width = MeasureSpec.getSize(widthMeasureSpec);
 
-        int width = (int)(height * 0.625);
+        //int measuredWidth = (int)(height * 0.625);
+        //int measuredHeight = height;
 
-        setMeasuredDimension(width, height);
+        //if(measuredWidth > width){
+        int measuredHeight = (int)(width * 1.6);
+        int measuredWidth = width;
+        //}
+
+        setMeasuredDimension(measuredWidth, measuredHeight);
     }
 
 

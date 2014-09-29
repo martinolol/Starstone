@@ -6,6 +6,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.GridView;
+import android.widget.LinearLayout;
+import android.widget.ListView;
 
 import com.starstone.Utils.SSContext;
 import com.starstone.adapter.CardLibraryListAdapter;
@@ -14,7 +17,7 @@ import com.starstone.widget.HorizontalListView;
 
 public class MainActivity extends Activity {
 
-    HorizontalListView cardList;
+    GridView cardList;
 
     CardLibraryListAdapter listAdapter;
 
@@ -28,7 +31,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         SSContext.createInstance(this);
 
-        cardList = (HorizontalListView)findViewById(R.id.cardList);
+        cardList = (GridView)findViewById(R.id.cardList);
 
         protossButton = (Button)findViewById(R.id.protoss);
         terranButton = (Button)findViewById(R.id.terran);

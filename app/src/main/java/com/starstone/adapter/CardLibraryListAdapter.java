@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.starstone.R;
@@ -49,12 +50,15 @@ public class CardLibraryListAdapter extends BaseAdapter {
     public int getCount() {
 
         if(heroId == Hero.PROTOSS){
+            Log.d("CardLibraryListAdapter", "getCount - (PROTOSS) count = " + protossCards.length);
             return protossCards.length;
 
         }else if(heroId == Hero.TERRAN){
+            Log.d("CardLibraryListAdapter", "getCount - (TERRAN) count = " + terranCards.length);
             return terranCards.length;
 
         }else if(heroId == Hero.ZERG){
+            Log.d("CardLibraryListAdapter", "getCount - (ZERG) count = " + zergCards.length);
             return zergCards.length;
 
         }
@@ -76,6 +80,7 @@ public class CardLibraryListAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
 
         CardView cardView = new CardView(SSContext.getContext());
+
 
         if(heroId == Hero.PROTOSS){
             cardView.setCard(protossCards[position]);

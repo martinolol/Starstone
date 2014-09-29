@@ -3,58 +3,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="8dp"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:id="@+id/categories"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_width="120dp"
+        android:layout_height="fill_parent"
+        android:padding="8dp"
+        android:orientation="vertical">
 
         <Button
             android:id="@+id/protoss"
-            android:layout_width="0dp"
+            android:layout_width="fill_parent"
             android:layout_height="48dp"
-            android:layout_weight="0.33"
-            android:layout_marginRight="8dp"
             android:textSize="28dp"
             android:textStyle="bold"
             android:textColor="#000"
-            android:text="Protoss"
+            android:text="P"
             android:background="@drawable/protoss_card_background"/>
+
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="8dp"/>
 
         <Button
             android:id="@+id/terran"
-            android:layout_width="0dp"
+            android:layout_width="fill_parent"
             android:layout_height="48dp"
-            android:layout_weight="0.33"
-            android:layout_marginRight="8dp"
             android:textSize="28dp"
             android:textStyle="bold"
             android:textColor="#FFF"
-            android:text="Terran"
+            android:text="T"
             android:background="@drawable/terran_card_background"/>
+
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="8dp"/>
 
         <Button
             android:id="@+id/zerg"
-            android:layout_width="0dp"
+            android:layout_width="fill_parent"
             android:layout_height="48dp"
-            android:layout_weight="0.33"
             android:textSize="28dp"
             android:textStyle="bold"
             android:textColor="#FFF"
-            android:text="Zerg"
+            android:text="Z"
             android:background="@drawable/zerg_card_background"/>
 
     </LinearLayout>
 
-    <com.starstone.widget.HorizontalListView
+    <View
+        android:id="@+id/categoriesDivier"
+        android:layout_width="2dp"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@id/categories"
+        android:background="#000"/>
+
+    <GridView
         android:id="@+id/cardList"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_marginTop="8dp"
-        android:layout_below="@id/categories"
-        starstone:dividerWidth="8dp"/>
+        android:layout_toRightOf="@id/categoriesDivier"
+        android:layout_margin="8dp"
+        android:numColumns="4"
+        android:horizontalSpacing="8dp" />
 
 </RelativeLayout>
