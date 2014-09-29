@@ -1,4 +1,5 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:starstone="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -48,15 +49,12 @@
 
     </LinearLayout>
 
-    <com.starstone.widget.MultipleItemViewPager
-        android:id="@+id/pagerContainer"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <com.starstone.widget.HorizontalListView
+        android:id="@+id/cardList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         android:layout_marginTop="8dp"
-        android:layout_below="@id/categories">
-        <android.support.v4.view.ViewPager
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"/>
-    </com.starstone.widget.MultipleItemViewPager>
+        android:layout_below="@id/categories"
+        starstone:dividerWidth="8dp"/>
 
 </RelativeLayout>

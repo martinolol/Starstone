@@ -2,23 +2,21 @@ package com.starstone;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
 import com.starstone.Utils.SSContext;
-import com.starstone.adapter.CardLibraryPagerAdapter;
+import com.starstone.adapter.CardLibraryListAdapter;
 import com.starstone.heroes.Hero;
-import com.starstone.widget.MultipleItemViewPager;
+import com.starstone.widget.HorizontalListView;
 
 public class MainActivity extends Activity {
 
-    MultipleItemViewPager pagerContainer;
-    ViewPager pager;
+    HorizontalListView cardList;
 
-    CardLibraryPagerAdapter pagerAdapter;
+    CardLibraryListAdapter listAdapter;
 
     Button protossButton = null;
     Button terranButton = null;
@@ -30,22 +28,17 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         SSContext.createInstance(this);
 
-        pagerContainer = (MultipleItemViewPager)findViewById(R.id.pagerContainer);
-        pager = pagerContainer.getViewPager();
+        cardList = (HorizontalListView)findViewById(R.id.cardList);
 
         protossButton = (Button)findViewById(R.id.protoss);
         terranButton = (Button)findViewById(R.id.terran);
         zergButton = (Button)findViewById(R.id.zerg);
 
-        pagerAdapter = new CardLibraryPagerAdapter();
+        listAdapter = new CardLibraryListAdapter();
 
-        pagerAdapter.setHero(Hero.PROTOSS);
+        listAdapter.setHero(Hero.PROTOSS);
 
-        pager.setAdapter(pagerAdapter);
-
-        pager.setOffscreenPageLimit(pagerAdapter.getCount());
-        pager.setPageMargin(15);
-        pager.setClipChildren(false);
+        cardList.setAdapter(listAdapter);
 
         protossButton.setOnClickListener(clickProtoss);
         terranButton.setOnClickListener(clickTerran);
@@ -55,21 +48,21 @@ public class MainActivity extends Activity {
     private View.OnClickListener clickProtoss = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            pagerAdapter.setHero(Hero.PROTOSS);
+            listAdapter.setHero(Hero.PROTOSS);
         }
     };
 
     private View.OnClickListener clickTerran = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            pagerAdapter.setHero(Hero.TERRAN);
+            listAdapter.setHero(Hero.TERRAN);
         }
     };
 
     private View.OnClickListener clickZerg = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            pagerAdapter.setHero(Hero.ZERG);
+            listAdapter.setHero(Hero.ZERG);
         }
     };
 
