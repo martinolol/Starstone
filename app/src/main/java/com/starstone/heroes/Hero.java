@@ -17,12 +17,12 @@ public class Hero {
         return cardBackground;
     }
 
-    public static Hero getHero(int hero){
-        if(hero == PROTOSS){
+    public static Hero getHero(int heroId){
+        if(heroId == PROTOSS){
             return new Protoss();
-        }else if(hero == TERRAN){
+        }else if(heroId == TERRAN){
             return new Terran();
-        }else if(hero == ZERG){
+        }else if(heroId == ZERG){
             return new Zerg();
         }
 

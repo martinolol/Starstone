@@ -1,19 +1,19 @@
 package com.starstone;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.GridView;
-import android.widget.LinearLayout;
-import android.widget.ListView;
 
 import com.starstone.Utils.SSContext;
 import com.starstone.adapter.CardLibraryListAdapter;
 import com.starstone.heroes.Hero;
-import com.starstone.widget.HorizontalListView;
+import com.starstone.widget.CardView;
 
 public class MainActivity extends Activity {
 
@@ -43,10 +43,24 @@ public class MainActivity extends Activity {
 
         cardList.setAdapter(listAdapter);
 
+        cardList.setOnItemClickListener(clickItemCardList);
         protossButton.setOnClickListener(clickProtoss);
         terranButton.setOnClickListener(clickTerran);
         zergButton.setOnClickListener(clickZerg);
     }
+
+    private AdapterView.OnItemClickListener clickItemCardList = new AdapterView.OnItemClickListener() {
+        @Override
+        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+            CardView cardView = new CardView(MainActivity.this, listAdapter.getCard(position));
+
+            AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this);
+            dialog.setView(cardView);
+            dialog.show();
+
+        }
+    };
 
     private View.OnClickListener clickProtoss = new View.OnClickListener() {
         @Override

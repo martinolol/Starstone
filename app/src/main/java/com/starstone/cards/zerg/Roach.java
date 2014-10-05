@@ -4,25 +4,15 @@ import android.graphics.BitmapFactory;
 
 import com.starstone.R;
 import com.starstone.Utils.SSContext;
+import com.starstone.cards.effects.Range;
 
 public class Roach extends ZergCard {
-
-    public static final int DEFAULT_PRICE = 2;
-    public static final int DEFAULT_LIFE = 2;
-    public static final int DEFAULT_DAMAGE = 3;
-
-    public static Integer[] DEFAULT_EFFECT = {};
 
     public Roach(){
         super();
 
-        price = DEFAULT_PRICE;
-        life = DEFAULT_LIFE;
-        damage = DEFAULT_DAMAGE;
-
-        portrait = BitmapFactory.decodeResource(SSContext.getContext().getResources(), R.drawable.zerg_portrait_roach);
-
-        setEffects(DEFAULT_EFFECT);
-
+        setPriceDamageAndLife(3, 2, 3);
+        addEffect(new Range());
+        setPortrait(R.drawable.zerg_portrait_roach);
     }
 }

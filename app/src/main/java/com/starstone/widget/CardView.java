@@ -3,6 +3,7 @@ package com.starstone.widget;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 
 import com.starstone.cards.Card;
@@ -21,6 +22,12 @@ public class CardView extends View {
 
     public CardView(Context context, AttributeSet attrs) {
         super(context, attrs);
+        init();
+    }
+
+    public CardView(Context context, Card card){
+        super(context);
+        this.card = card;
         init();
     }
 
@@ -55,15 +62,24 @@ public class CardView extends View {
         int height = MeasureSpec.getSize(heightMeasureSpec);
         int width = MeasureSpec.getSize(widthMeasureSpec);
 
-        //int measuredWidth = (int)(height * 0.625);
-        //int measuredHeight = height;
-
-        //if(measuredWidth > width){
+        int measuredWidth = (int)(height * 0.625);
         int measuredHeight = (int)(width * 1.6);
-        int measuredWidth = width;
-        //}
 
-        setMeasuredDimension(measuredWidth, measuredHeight);
+
+        Log.d("CardView", "onMeasure - height : " + height + " || measuredHeight : " + measuredHeight);
+        Log.d("CardView", "onMeasure - width : " + width + " || measuredWidth : " + measuredWidth);
+
+        if(width > height && height != 0){
+            setMeasuredDimension(measuredWidth, height);
+            return;
+        }
+
+        if(measuredHeight > height){
+            setMeasuredDimension(width, measuredHeight);
+        }else{
+            setMeasuredDimension(measuredWidth, height);
+        }
+
     }
 
 

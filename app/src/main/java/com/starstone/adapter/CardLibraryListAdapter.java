@@ -96,6 +96,21 @@ public class CardLibraryListAdapter extends BaseAdapter {
         return cardView;
     }
 
+    public Card getCard(int position){
+
+        if(heroId == Hero.PROTOSS){
+            return protossCards[position];
+
+        }else if(heroId == Hero.TERRAN){
+            return terranCards[position];
+
+        }else if(heroId == Hero.ZERG){
+            return zergCards[position];
+
+        }
+        return null;
+    }
+
     public void setHero(byte heroId){
         this.heroId = heroId;
         notifyDataSetChanged();
